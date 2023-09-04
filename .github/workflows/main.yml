@@ -25,7 +25,7 @@ jobs:
           ados84/trader-worker:${{github.run_number}}
           ados84/trader-worker:latest        
     - name: Construção da imagem Docker api backend 
-      uses: docker/build-push-action@4.1.1
+      uses: docker/build-push-action@v4.1.1
       with: 
         context: ./home-broker/02-api
         file: ./home-broker/02-api/Dockerfile
